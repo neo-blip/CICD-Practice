@@ -16,8 +16,6 @@ public class TestClass {
 	public static WebDriver driver;
 	@BeforeMethod
 	public void launchDriver() {
-//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sushem\\Documents\\drivers\\chromedriver108.exe");
-//		WebDriverManager.firefoxdriver().setup();
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
